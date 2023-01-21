@@ -18,6 +18,14 @@ function encriptar() {
 
 }
 
+function copiar() {
+    
+    var contenido = document.querySelector("#textoDesencriptado");
+    contenido.select();
+    document.execCommand("copy");
+
+}
+
 function desencriptar() {
 
     var frase = document.getElementById("textoEncriptado").value.toLowerCase();
